@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root{
+    /* (main background) */
+    --Very-dark-blue : hsl(233, 47%, 7%);
+    /* (card background) */
+    --Dark-desaturated-blue : hsl(244, 38%, 16%);
+    /* (accent) */
+    --Soft-violet: hsl(277, 64%, 61%);
+    
+    /* ### Neutral */
+    /* (main heading, stats) */
+    --White: hsl(0, 0%, 100%);
+    /* (main paragraph) */
+    --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* (stat headings) */
+    --Slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very-dark-blue);
+    padding: 0;
+    margin: 0;
+}
+
+.card{
+    width: 75%;
+    background-color: var(--Dark-desaturated-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+}
+.card-container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image{
+    border-radius:  0 .5rem .5rem  0;
+}
+
+.context{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 3rem; */
+    justify-content: center;
+    align-items: center;
+}
+
+.context .title{
+    font-family: 'Inter', sans-serif;
+    color: var(--White);
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.context .text{
+    display: flex;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    color: var(--Slightly-transparent-white);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 64%;
+    height: 100%;
+    /* padding: 0rem 5rem; */
+}
+
+.info{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.info .parts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info .parts h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: var(--White);
+    margin-bottom: .3rem;
+}
+
+.info .parts p{
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: var(--Slightly-transparent-white);
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 1.7px;
+}
+
+.attribution { 
+    font-size: 11px;
+    color: white; 
+    text-align: center; 
+    position: absolute;
+    bottom: 1rem;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
